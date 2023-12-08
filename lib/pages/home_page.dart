@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:personalfinanceapp/components/post_item.dart';
+import 'package:personalfinanceapp/pages/nearby_page.dart';
 
 import '../components/tool_bar.dart';
 import '../constants/app_strings.dart';
@@ -19,7 +20,7 @@ class HomePage extends StatelessWidget {
           actions: [
             IconButton(
               onPressed: () {
-                return;
+                Navigator.of(context).push(MaterialPageRoute(builder:(context) => const NearbyPage(),));
               },
               icon: Icon(Icons.location_on_outlined),
             ),

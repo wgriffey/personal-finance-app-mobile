@@ -28,4 +28,5 @@ class AppStrings {
   static const location = 'Location';
   static const birthday = 'Birthday';
   static const gender = 'Gender';
+  static const nearby = 'Nearby';
 }
